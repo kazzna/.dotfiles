@@ -13,7 +13,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Configs added by me...
+## Configs added by me...
+
+# aliases
+if [ -x /usr/bin/dircolors ]; then
+	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+	alias ls='ls --color=auto'
+fi
+
 # Color settings
 autoload colors
 colors
