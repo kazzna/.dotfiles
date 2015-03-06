@@ -7,7 +7,7 @@ unsetopt autocd beep extendedglob notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/kazzna/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -17,7 +17,7 @@ compinit
 # Color settings
 autoload colors
 colors
-local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
 local p_info="%n@%m${WINDOW:+"[$WINDOW]"}"
+local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
 local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
-PROMPT="$p_cdir$p_info $p_mark "
+PROMPT="$p_info $p_cdir$p_mark "
