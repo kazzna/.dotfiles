@@ -15,6 +15,17 @@ compinit
 
 ## Configs added by me...
 
+# load library
+function loadlib() {
+	echo "loadlib called ${1}"
+	lib=${1:?"Must specify the library file..."}
+	if [ -f "$lib" ]; then
+		source "$lib"
+	fi
+}
+# ZDIR=$(dirname $(readlink -f $0))/zsh # うまくいかない
+ZDIR=${HOME}/.dotfiles/zsh
+
 # aliases
 if [ -x /usr/bin/dircolors ]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -28,3 +39,6 @@ local p_info="%n@%m${WINDOW:+"[$WINDOW]"}"
 local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
 local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
 PROMPT="$p_info $p_cdir$p_mark "
+
+# python settings
+loadlib "${ZDIR}/python.zshrc"
