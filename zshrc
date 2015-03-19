@@ -17,14 +17,12 @@ compinit
 
 # load library
 function loadlib() {
-	echo "loadlib called ${1}"
 	lib=${1:?"Must specify the library file..."}
 	if [ -f "$lib" ]; then
 		source "$lib"
 	fi
 }
-# ZDIR=$(dirname $(readlink -f $0))/zsh # うまくいかない
-ZDIR=${HOME}/.dotfiles/zsh
+ZDIR=$(dirname $(readlink -f ${(%):-%N}))/zsh
 
 # aliases
 if [ -x /usr/bin/dircolors ]; then
