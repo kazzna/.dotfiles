@@ -40,3 +40,6 @@ PROMPT="$p_info $p_cdir$p_mark "
 
 # python settings
 loadlib "${ZDIR}/python.zshrc"
+
+# nvm settings
+loadlib "${ZDIR}/nvm.zshrc"
