@@ -27,6 +27,7 @@ NeoBundle 'rcmdnk/vim-markdown'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'leafgarland/typescript-vim'
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'w0ng/vim-hybrid'
 
