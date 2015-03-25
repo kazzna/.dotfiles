@@ -68,3 +68,4 @@ set softtabstop=2
 " 行番号とかLineとか
 set number
 set cursorline
+highlight CursorLine term=bold cterm=bold guibg=Grey40
