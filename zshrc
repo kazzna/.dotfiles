@@ -35,6 +35,12 @@ if [ -x /usr/bin/dircolors ]; then
 	alias ls='ls --color=auto'
 fi
 
+# 入力したコマンドがすでにコマンド履歴に含まれる場合、履歴から古いほうのコマンドを削除する
+setopt hist_ignore_all_dups
+
+# コマンドがスペースで始まる場合、コマンド履歴に追加しない
+setopt hist_ignore_space
+
 # Color settings
 autoload colors
 colors
