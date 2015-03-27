@@ -18,19 +18,19 @@ compinit
 # load library function
 function loadlib() {
 	lib=${1:?"Must specify the library file..."}
-	if [ -f "$lib" ]; then
+	if [[ -f "$lib" ]]; then
 		source "$lib"
 	fi
 }
 ZDIR=$(dirname $(readlink -f ${(%):-%N}))/zsh
 
 # make less more friendly for non-text input files, see lesspipe(1)
-if [ -x /usr/bin/lesspipe ]; then
+if [[ -x /usr/bin/lesspipe ]]; then
 	eval "$(SHELL=/bin/sh lesspipe)"
 fi
 
 # aliases
-if [ -x /usr/bin/dircolors ]; then
+if [[ -x /usr/bin/dircolors ]]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 	alias ls='ls --color=auto'
 fi
