@@ -16,20 +16,24 @@ call neobundle#begin(expand('/home/kazzna/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'gre/play2vim'
+NeoBundle 'leafgarland/typescript-vim'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'rcmdnk/vim-markdown'
+NeoBundle 'rking/ag.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'Shougo/neocomplcache.git'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'rking/ag.vim'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'rcmdnk/vim-markdown'
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'leafgarland/typescript-vim'
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'w0ng/vim-hybrid'
+NeoBundle 'lambdatoast/elm.vim'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
