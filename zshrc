@@ -35,6 +35,8 @@ if [[ -x /usr/bin/dircolors ]]; then
 	alias ls='ls --color=auto'
 fi
 
+alias nicely='nice -n19 ionice -c3'
+
 # 入力したコマンドがすでにコマンド履歴に含まれる場合、履歴から古いほうのコマンドを削除する
 setopt hist_ignore_all_dups
 
