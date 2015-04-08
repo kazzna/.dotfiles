@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
   if &compatible
@@ -51,8 +53,9 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 
 " クリップボードの設定
-set clipboard&
-set clipboard^=unnamedplus
+if filereadable(expand('$HOME/.dotfiles/vim/clipboard.vimrc'))
+	source $HOME/.dotfiles/vim/clipboard.vimrc
+endif
 
 " color
 colorscheme desert
@@ -63,11 +66,9 @@ set hlsearch
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
 " インデントの設定
-set noexpandtab
-" set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+if filereadable(expand('$HOME/.dotfiles/vim/indent.vimrc'))
+	source $HOME/.dotfiles/vim/indent.vimrc
+endif
 
 " 行番号とかLineとか
 set number
