@@ -37,11 +37,8 @@ fi
 
 alias nicely='nice -n19 ionice -c3'
 
-# 入力したコマンドがすでにコマンド履歴に含まれる場合、履歴から古いほうのコマンドを削除する
-setopt hist_ignore_all_dups
-
-# コマンドがスペースで始まる場合、コマンド履歴に追加しない
-setopt hist_ignore_space
+# history settings
+loadlib "${ZDIR}/history.zshrc"
 
 # Color settings
 autoload colors
