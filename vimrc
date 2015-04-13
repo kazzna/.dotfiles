@@ -1,21 +1,9 @@
 scriptencoding utf-8
 
-"NeoBundle Scripts-----------------------------
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-
-  " Required:
-  set runtimepath+=/home/kazzna/.vim/bundle/neobundle.vim/
+" NeoBundle Start
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundleStart.vimrc'))
+	source $HOME/.dotfiles/vim/NeoBundleStart.vimrc
 endif
-
-" Required:
-call neobundle#begin(expand('/home/kazzna/.vim/bundle'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Add or remove your Bundles here:
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -37,19 +25,15 @@ NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'lambdatoast/elm.vim'
 
+
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'Shougo/vimshell'
 
-" Required:
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+" NeoBundle Finalize
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundleEnd.vimrc'))
+	source $HOME/.dotfiles/vim/NeoBundleEnd.vimrc
+endif
 "End NeoBundle Scripts-------------------------
 
 " クリップボードの設定
@@ -57,21 +41,12 @@ if filereadable(expand('$HOME/.dotfiles/vim/clipboard.vimrc'))
 	source $HOME/.dotfiles/vim/clipboard.vimrc
 endif
 
-" color
-colorscheme desert
-syntax on
-
-" ハイライトの設定
-set hlsearch
-nnoremap <ESC><ESC> :nohlsearch<CR>
+" look & feel
+if filereadable(expand('$HOME/.dotfiles/vim/looknfeel.vimrc'))
+	source $HOME/.dotfiles/vim/looknfeel.vimrc
+endif
 
 " インデントの設定
 if filereadable(expand('$HOME/.dotfiles/vim/indent.vimrc'))
 	source $HOME/.dotfiles/vim/indent.vimrc
 endif
-
-" 行番号とかLineとか
-set number
-set cursorline
-highlight CursorLine term=bold cterm=bold guibg=Grey40
-set incsearch
