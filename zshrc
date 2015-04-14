@@ -24,11 +24,6 @@ function loadlib() {
 }
 ZDIR=$(dirname $(readlink -f ${(%):-%N}))/zsh
 
-# make less more friendly for non-text input files, see lesspipe(1)
-if [[ -x /usr/bin/lesspipe ]]; then
-	eval "$(SHELL=/bin/sh lesspipe)"
-fi
-
 # aliases
 if [[ -x /usr/bin/dircolors ]]; then
 	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
