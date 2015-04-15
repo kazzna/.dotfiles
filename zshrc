@@ -48,3 +48,5 @@ loadlib "${ZDIR}/python.zshrc"
 
 # nvm settings
 loadlib "${ZDIR}/nvm.zshrc"
+
+alias nicely='nice -n 19 ionice -c 3'
