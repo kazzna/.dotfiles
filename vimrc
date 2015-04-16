@@ -23,8 +23,12 @@ NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'w0ng/vim-hybrid'
-NeoBundle 'lambdatoast/elm.vim'
 NeoBundle 'chase/vim-ansible-yaml'
+
+" incsearch.vim
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc'))
+	source $HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc
+endif
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
