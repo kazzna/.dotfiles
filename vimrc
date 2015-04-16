@@ -24,6 +24,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'lambdatoast/elm.vim'
+NeoBundle 'chase/vim-ansible-yaml'
 
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
