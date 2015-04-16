@@ -25,11 +25,6 @@ NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'lambdatoast/elm.vim'
 
-" NeoBundle Finalize
-if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc'))
-	source $HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc
-endif
-
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'Shougo/vimshell'
