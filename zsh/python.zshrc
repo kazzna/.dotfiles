@@ -1,9 +1,9 @@
 # Python Settings
 # pyenv
-if [[ -d "${HOME}/.pyenv" ]]; then
-	export PYENV_ROOT="${HOME}/.pyenv"
-	if [[ -d "${PYENV_ROOT}" ]]; then
-		export PATH=${PYENV_ROOT}/bin:$PATH
-		eval "$(pyenv init -)"
+PYENV_ROOT="${HOME}/.pyenv"
+if [[ -d "${PYENV_ROOT}" ]]; then
+	export PYENV_ROOT
+	export PATH=${PYENV_ROOT}/bin:$PATH
+	eval "$(pyenv init -)"
 	fi
 fi
