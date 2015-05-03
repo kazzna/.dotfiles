@@ -30,6 +30,11 @@ if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc'))
 	source $HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc
 endif
 
+" stylus.vim
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/stylus.vimrc'))
+	source $HOME/.dotfiles/vim/NeoBundle/stylus.vimrc
+endif
+
 " You can specify revision/branch/tag.
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 NeoBundle 'Shougo/vimshell'
