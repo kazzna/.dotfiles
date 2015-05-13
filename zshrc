@@ -38,13 +38,25 @@ loadlib "${ZDIR}/history.zshrc"
 # Color settings
 autoload colors
 colors
-local p_info="%n@%m${WINDOW:+"[$WINDOW]"}"
-local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
-local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
-PROMPT="$p_info $p_cdir$p_mark "
 
 # git settings
-loadlib "${ZDIR}/git.zshrc"
+#loadlib "${ZDIR}/git.zshrc"
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats '(%s:%b)'
+zstyle ':vcs_info:*' actionformats '(%s:%b|%a)'
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+local p_git="%1(v|%F{green}%1v%f|)"
+
+# PROMPT
+local p_info="%n@%m${WINDOW:+"[$WINDOW]"}"
+local p_cdir="%B%F{blue}[%~]%f%b"
+local p_nl=$'\n'
+local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
+PROMPT="${p_info} ${p_cdir} ${p_git}${p_nl}${p_mark} "
 
 # python settings
 loadlib "${ZDIR}/python.zshrc"
