@@ -26,18 +26,18 @@ NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'chase/vim-ansible-yaml'
 
 " incsearch.vim
-if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc'))
-	source $HOME/.dotfiles/vim/NeoBundle/incsearch.vimrc
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vim'))
+	source $HOME/.dotfiles/vim/NeoBundle/incsearch.vim
 endif
 
 " stylus.vim
-if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/stylus.vimrc'))
-	source $HOME/.dotfiles/vim/NeoBundle/stylus.vimrc
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/stylus.vim'))
+	source $HOME/.dotfiles/vim/NeoBundle/stylus.vim
 endif
 
 " stylus.vim
-if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/jade.vimrc'))
-	source $HOME/.dotfiles/vim/NeoBundle/jade.vimrc
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/jade.vim'))
+	source $HOME/.dotfiles/vim/NeoBundle/jade.vim
 endif
 
 " You can specify revision/branch/tag.
