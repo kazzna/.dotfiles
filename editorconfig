@@ -43,7 +43,7 @@ trim_trailing_whitespace = true
 [*.{txt,md}]
 insert_final_newline = true
 
-[*.{html,htm}]
+[*.{html,htm,jade}]
 indent_style = tab
 indent_size = 2
 tab_width = 2
