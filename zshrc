@@ -43,6 +43,9 @@ local p_cdir="%B%F{blue}[%~]%f%b"$'\n'
 local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
 PROMPT="$p_info $p_cdir$p_mark "
 
+# git settings
+loadlib "${ZDIR}/git.zshrc"
+
 # python settings
 loadlib "${ZDIR}/python.zshrc"
 
