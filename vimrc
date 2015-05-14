@@ -24,6 +24,7 @@ NeoBundle 'Shougo/neosnippet-snippets'
 "NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle 'vim-scripts/sudo.vim'
 
 " incsearch.vim
 if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vim'))
