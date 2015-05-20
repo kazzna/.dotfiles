@@ -14,6 +14,9 @@ compinit
 # End of lines added by compinstall
 
 ## Configs added by me...
+# 日本語表示
+setopt print_eight_bit
+
 
 # load library function
 function loadlib() {
@@ -42,21 +45,25 @@ colors
 # git settings
 #loadlib "${ZDIR}/git.zshrc"
 autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git svn hg bzr
 zstyle ':vcs_info:*' formats '(%s:%b)'
 zstyle ':vcs_info:*' actionformats '(%s:%b|%a)'
+zstyle ':vcs_info:(svn|bzr):*' branchformat '%b:r%r'
+zstyle ':vcs_info:bzr:*' use_simple true
+
 precmd () {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
-local p_git="%1(v|%F{green}%1v%f|)"
+local p_vcs="%1(v|%F{green}%1v%f|)"
 
 # PROMPT
 local p_info="%n@%m${WINDOW:+"[$WINDOW]"}"
 local p_cdir="%B%F{blue}[%~]%f%b"
 local p_nl=$'\n'
 local p_mark="%B%(?,%F{green},%F{red})%(!,#,>)%f%b"
-PROMPT="${p_info} ${p_cdir} ${p_git}${p_nl}${p_mark} "
+PROMPT="${p_info} ${p_cdir} ${p_vcs}${p_nl}${p_mark} "
 
 # python settings
 loadlib "${ZDIR}/python.zshrc"
