@@ -36,9 +36,14 @@ if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/stylus.vim'))
 	source $HOME/.dotfiles/vim/NeoBundle/stylus.vim
 endif
 
-" stylus.vim
+" jade.vim
 if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/jade.vim'))
 	source $HOME/.dotfiles/vim/NeoBundle/jade.vim
+endif
+
+" jsx.vim
+if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/jsx.vim'))
+	source $HOME/.dotfiles/vim/NeoBundle/jsx.vim
 endif
 
 " You can specify revision/branch/tag.
