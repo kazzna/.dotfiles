@@ -70,3 +70,8 @@ endif
 if filereadable(expand('$HOME/.dotfiles/vim/indent.vimrc'))
 	source $HOME/.dotfiles/vim/indent.vimrc
 endif
+
+" ビープ音を消す
+if filereadable(expand('$HOME/.dotfiles/vim/nobeep.vimrc'))
+	source $HOME/.dotfiles/vim/nobeep.vimrc
+endif
