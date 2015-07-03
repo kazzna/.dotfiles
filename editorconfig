@@ -58,3 +58,7 @@ trim_trailing_whitespace = true
 [*.{yaml,yml}]
 indent_style = space
 indent_size = 2
+
+[*.hs]
+insert_final_newline = true
+trim_trailing_whitespace = true
