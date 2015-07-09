@@ -28,7 +28,6 @@ NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'dag/vim2hs'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'flazz/vim-colorschemes'
 
 " incsearch.vim
 if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vim'))
