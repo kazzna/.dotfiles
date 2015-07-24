@@ -28,6 +28,7 @@ NeoBundle 'vim-scripts/sudo.vim'
 NeoBundle 'dag/vim2hs'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'idris-hackers/idris-vim'
 
 " incsearch.vim
 if filereadable(expand('$HOME/.dotfiles/vim/NeoBundle/incsearch.vim'))
