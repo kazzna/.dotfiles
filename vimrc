@@ -1,5 +1,8 @@
 scriptencoding utf-8
 
+set encoding=utf-8
+set fileencodings=utf-8,utf-16,sjis,euc-jp,iso-2022-jp
+
 " NeoBundle Start
 if filereadable(expand('$HOME/.dotfiles/vim/NeoBundleStart.vimrc'))
 	source $HOME/.dotfiles/vim/NeoBundleStart.vimrc
@@ -60,7 +63,7 @@ if filereadable(expand('$HOME/.dotfiles/vim/NeoBundleEnd.vimrc'))
 endif
 "End NeoBundle Scripts-------------------------
 
-" クリップボードの設定
+" ã¯ãªãããã¼ãã®è¨­å®
 if filereadable(expand('$HOME/.dotfiles/vim/clipboard.vimrc'))
 	source $HOME/.dotfiles/vim/clipboard.vimrc
 endif
@@ -70,12 +73,12 @@ if filereadable(expand('$HOME/.dotfiles/vim/looknfeel.vimrc'))
 	source $HOME/.dotfiles/vim/looknfeel.vimrc
 endif
 
-" インデントの設定
+" ã¤ã³ãã³ãã®è¨­å®
 if filereadable(expand('$HOME/.dotfiles/vim/indent.vimrc'))
 	source $HOME/.dotfiles/vim/indent.vimrc
 endif
 
-" ビープ音を消す
+" ãã¼ãé³ãæ¶ã
 if filereadable(expand('$HOME/.dotfiles/vim/nobeep.vimrc'))
 	source $HOME/.dotfiles/vim/nobeep.vimrc
 endif
