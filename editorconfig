@@ -62,3 +62,7 @@ indent_size = 2
 [*.{hs,idr}]
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*.{c,cpp,h}]
+insert_final_newline = true
+trim_trailing_whitespace = true
