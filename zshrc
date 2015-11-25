@@ -17,6 +17,11 @@ compinit
 # 日本語表示
 setopt print_eight_bit
 
+# default editor
+if [[ -f "/usr/bin/vim" ]]; then
+	EDITOR=/usr/bin/vim
+	export EDITOR
+fi
 
 # load library function
 function loadlib() {
