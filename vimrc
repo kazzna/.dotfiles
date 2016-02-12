@@ -23,6 +23,11 @@ if filereadable(expand('$HOME/.dotfiles/vim/nobeep.vimrc'))
 	source $HOME/.dotfiles/vim/nobeep.vimrc
 endif
 
+" ZQ時に/tmpにバックアップを！！
+if filereadable(expand('$HOME/.dotfiles/vim/backupZQ.vimrc'))
+	source $HOME/.dotfiles/vim/backupZQ.vimrc
+endif
+
 " NeoBundle Start
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
