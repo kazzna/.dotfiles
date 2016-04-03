@@ -45,21 +45,21 @@ if &runtimepath !~# '/dein.vim'
 	execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-" Required:
-call dein#begin(s:dein_dir)
+if dein#load_state(s:dein_dir)
+	" start dain settings
+	call dein#begin(s:dein_dir)
 
-let s:strict = '~/.dotfiles/vim/dein/strict.toml'
-let s:lazy = '~/.dotfiles/vim/dein/lazy.toml'
+	let s:strict = '~/.dotfiles/vim/dein/strict.toml'
+	let s:lazy = '~/.dotfiles/vim/dein/lazy.toml'
 
-" cache tomls
-if dein#load_cache([expand('<sfile>'), s:strict, s:lazy])
+	" cache tomls
 	call dein#load_toml(s:strict, {'lazy': 0})
 	call dein#load_toml(s:lazy, {'lazy': 1})
-	call dein#save_cache()
-endif
 
-" Required:
-call dein#end()
+	" terminate settings
+	call dein#end()
+	call dein#save_state()
+endif
 
 " Required:
 filetype plugin indent on
