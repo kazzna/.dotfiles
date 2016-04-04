@@ -18,8 +18,8 @@ compinit
 setopt print_eight_bit
 
 # default editor
-if [[ -f "/usr/bin/vim" ]]; then
-	EDITOR=/usr/bin/vim
+EDITOR=/usr/bin/vim
+if [[ -f "$EDITOR" ]]; then
 	export EDITOR
 fi
 
