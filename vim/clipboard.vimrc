@@ -1,3 +1,7 @@
 " クリップボードの設定
 set clipboard&
-set clipboard^=unnamedplus
+if has('unnamedplus')
+	set clipboard^=unnamedplus
+else
+	set clipboard^=unnamed,autoselect
+endif
