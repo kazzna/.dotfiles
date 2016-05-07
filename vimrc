@@ -76,9 +76,6 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
-" jsx.vim
-let g:jsx_pragma_required = 1
-
 " stylus.vim
 augroup stylus
 	autocmd!
