@@ -69,3 +69,7 @@ indent_style = space
 [*.{c,cpp,h}]
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*.sql]
+insert_final_newline = true
+trim_trailing_whitespace = true
