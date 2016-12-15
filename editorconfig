@@ -73,6 +73,7 @@ trim_trailing_whitespace = true
 [*.sql]
 insert_final_newline = true
 trim_trailing_whitespace = true
+indent_style = space
 
 [*.sh]
 indent_style = space
