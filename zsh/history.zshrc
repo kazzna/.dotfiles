@@ -1,5 +1,6 @@
-# 入力したコマンドがすでにコマンド履歴に含まれる場合、履歴から古いほうのコマンドを削除する
-setopt hist_ignore_all_dups
-
-# コマンドがスペースで始まる場合、コマンド履歴に追加しない
-setopt hist_ignore_space
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_NO_STORE
