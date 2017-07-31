@@ -43,7 +43,7 @@ trim_trailing_whitespace = true
 [*.{txt,md}]
 insert_final_newline = true
 
-[*.{html,htm,jade}]
+[*.{html,htm,jade,pug}]
 indent_style = tab
 indent_size = 2
 tab_width = 2
@@ -84,3 +84,6 @@ trim_trailing_whitespace = true
 [*.go]
 insert_final_newline = true
 trim_trailing_whitespace = true
+
+[*.tsv]
+trim_trailing_whitespace = false
