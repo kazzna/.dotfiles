@@ -30,7 +30,7 @@ function loadlib() {
 		source "$lib"
 	fi
 }
-ZDIR=$(dirname $(readlink -f ${(%):-%N}))/zsh
+ZDIR=$(dirname $(greadlink -f ${(%):-%N}))/zsh
 
 # aliases
 if [[ -x /usr/bin/dircolors ]]; then
