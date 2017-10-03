@@ -3,7 +3,7 @@ Linux dot file settings for share.
 
 ## USAGE
 ```sh
-cd ~ && git clone https://github.com/kazzna/.dotfiles.git
+git clone https://github.com/kazzna/dotfiles.git ~/.dotfiles
 ln -sf ~/.{dotfiles/,}zshrc
 ```
 
