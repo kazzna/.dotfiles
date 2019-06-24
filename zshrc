@@ -77,3 +77,9 @@ loadlib "${ZDIR}/python.zshrc"
 loadlib "${ZDIR}/nvm.zshrc"
 
 alias nicely='nice -n 19 ionice -c 3'
+
+# rbenv
+if [ -f "/usr/local/bin/rbenv" ]
+then
+	eval "$(rbenv init -)"
+fi
