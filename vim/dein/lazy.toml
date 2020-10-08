@@ -7,28 +7,8 @@ repo = 'derekwyatt/vim-scala'
 on_ft = ['scala']
 
 [[plugins]]
-repo = 'digitaltoad/vim-jade'
-on_ft = ['jade']
-
-[[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
-
-[[plugins]]
-repo = 'gre/play2vim'
-on_ft = ['scala']
-
-[[plugins]]
-repo = 'mxw/vim-jsx'
-on_source = ['vim-javascript']
-
-[[plugins]]
-repo = 'pangloss/vim-javascript'
-on_ft = ['javascript']
-
-[[plugins]]
-repo = 'wavded/vim-stylus'
-on_ft = ['stylus']
 
 [[plugins]]
 repo = 'ElmCast/elm-vim'

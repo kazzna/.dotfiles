@@ -2,8 +2,6 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'chase/vim-ansible-yaml'
-[[plugins]]
 repo = 'editorconfig/editorconfig-vim'
 [[plugins]]
 repo = 'haya14busa/incsearch.vim'
