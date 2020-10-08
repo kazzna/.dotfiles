@@ -77,7 +77,7 @@ map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
 " stylus.vim
-augroup stylus
+augroup Stylus
 	autocmd!
 	autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 augroup END
