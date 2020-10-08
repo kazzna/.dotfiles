@@ -93,3 +93,16 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+
+export_path() {
+	if [ -d "$1" ]
+	then
+		if [ ! `echo "$PATH" | grep -q "$1"` ]
+		then
+			export PATH="$1:$PATH"
+		fi
+	fi
+}
+
+# Add $HOME/bin to PATH
+export_path "$HOME/bin"
