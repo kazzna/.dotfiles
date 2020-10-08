@@ -81,3 +81,8 @@ augroup stylus
 	autocmd!
 	autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 augroup END
+
+augroup Digdag
+	autocmd!
+	autocmd BufNewFile,BufReadPost *.dig set filetype=yaml
+augroup END
