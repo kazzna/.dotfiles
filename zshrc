@@ -79,10 +79,7 @@ loadlib "${ZDIR}/nvm.zshrc"
 alias nicely='nice -n 19 ionice -c 3'
 
 # rbenv
-if [ -f "/usr/local/bin/rbenv" ]
-then
-	eval "$(rbenv init -)"
-fi
+if [ -f "/usr/local/bin/rbenv" ]; then eval "$(rbenv init -)"; fi
 
 # nodenv
 if [ -f "/usr/local/bin/nodenv" ]; then eval "$(nodenv init -)"; fi
