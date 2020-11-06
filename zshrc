@@ -134,3 +134,6 @@ export_path() {
 
 # Add $HOME/bin to PATH
 export_path "$HOME/bin"
+
+# Add mysql-client path to PATH
+export_path "/usr/local/opt/mysql-client/bin"
