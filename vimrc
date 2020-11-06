@@ -82,7 +82,8 @@ augroup Stylus
 	autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
 augroup END
 
-augroup Digdag
+augroup Precog
 	autocmd!
 	autocmd BufNewFile,BufReadPost *.dig set filetype=yaml
+	autocmd BufNewFile,BufReadPost *.sql.tpl set filetype=sql
 augroup END
