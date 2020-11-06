@@ -88,6 +88,34 @@ if [ -f "/usr/local/bin/nodenv" ]; then eval "$(nodenv init -)"; fi
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export SBT_OPTS="-Xmx4G -Xms4G \
+    -Duser.timezone=Asia/Tokyo \
+    -Dlogger.file=conf/logback.test.xml \
+    -Dconfig.file=conf/application.local.conf \
+    -Ddb.default.url=jdbc:mysql://localhost/ganma_test?characterEncoding=UTF8&useSSL=false \
+    -Ddb.default.username=ganma_default \
+    -Ddb.default.password=default \
+    -Ddb.default.logSql=true \
+    -Ddb.super.url=jdbc:mysql://localhost/ganma_test?characterEncoding=UTF8&useSSL=false \
+    -Ddb.super.username=ganma_super \
+    -Ddb.super.password=super \
+    -Ddb.super.logSql=true \
+    -Ddb.admin.url=jdbc:mysql://localhost/ganma_test?characterEncoding=UTF8&useSSL=false \
+    -Ddb.admin.username=root \
+    -Ddb.admin.password=admin \
+    -Ddb.admin.logSql=true \
+    -Ddb.readOnly.url=jdbc:mysql://localhost/ganma_test?characterEncoding=UTF8&useSSL=false \
+    -Ddb.readOnly.username=ganma_default \
+    -Ddb.readOnly.password=default \
+    -Ddb.readOnly.logSql=true \
+    -Dscalikejdbc.global.loggingSQLErrors=true \
+    -Dscalikejdbc.global.loggingConnections=false \
+    -Dscalikejdbc.global.loggingSQLAndTime.enabled=true \
+    -Dredis.master.host=localhost \
+    -Dredis.master.port=6379 \
+    -Dredis.slave.host=localhost \
+    -Dredis.slave.port=6379"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
