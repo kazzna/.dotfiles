@@ -3,5 +3,5 @@ set clipboard&
 if has('unnamedplus')
 	set clipboard^=unnamedplus
 else
-	set clipboard^=unnamed,autoselect
+	set clipboard^=unnamed
 endif
